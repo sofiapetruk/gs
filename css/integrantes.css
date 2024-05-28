@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(219, 201, 201);
+}
+
+.container {
+    border-color: blue;
+    border-style: solid;
+}
+
+.membro {
+    border-color: blueviolet;
+    border-style: solid;
+    margin: 10px;
+}
+
+.social-media {
+    border-color: brown;
+    border-style: solid;
+    margin: 10px;
+}
+
+.imagem {
+    border-color: cadetblue;
+    border-style: solid;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+}
