@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(https://i.imgur.com/MmvRuCg.jpg);
+    background-repeat: no-repeat; /*coloca isso para o fundo não repetir */
+    background-size: cover; /*Para cobrir todo os espaço */
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%; /*Ocupar 100% do espaço */
+    margin-top: 100px;
+}
+
+.form-login {
+    background-color: #ffffff90; /*deixa a imagem com o fundo do background */
+    padding: 30px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 1px 0px #00000070; /* mudar a sombra */
+    width: 400px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /*Serve para a margin de baixo do h1 */
+    /*Colocar a cor no h1 */
+}
+
+.form-content input {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+
+}
+
+.form-content {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.form-content label{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+button {
+    /*colocar a cor */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}

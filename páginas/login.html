@@ -9,16 +9,14 @@
 
 </head>
 <body>
-    <div class="container">
-        <section class="header">
-            <h2>Login</h2>
-        </section>
-        <div class="card">
+    <div class="container">            
+        <div class="form-login">
+            <h1>Login</h1>
 
             <div id="msgError"></div>
 
             <div class="form-content">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input 
                 type="email"
                 id="email"
@@ -26,7 +24,7 @@
             </div>
 
             <div class="form-content">
-                <label for="password">Senha</label>
+                <label for="password">Senha:</label>
                 <input 
                 type="password"
                 id="passaword"
@@ -38,10 +36,15 @@
                 <button type="submit" onclick="entrar()">Entrar</button>
             </div>
 
+            <div id="linha">
+                <hr>
+            </div>
+
             <p>
                 Não tem conta?
                 <a href="./cadastro.html">Cadastre-se</a>
             </p>
+            
 
 
         </div>

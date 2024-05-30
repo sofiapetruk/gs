@@ -10,26 +10,24 @@
 </head>
 <body>
     <div class="container">
-        <section class="header">
-            <h2>Nova Conta</h2>
-        </section>
-        <div class="card">
+        <div class="form-cadastro">
+            <h1>Nova Conta</h1>
 
             <div id="msgError"></div>
             <div id="msgSucess"></div>
 
 
             <div class="form-content">
-                <label for="username">Nome do usuário</label>
+                <label id="labelnome"for="username">Nome do usuário:</label>
                 <input 
                 type="text"
                 id="username"
-                placeholder="Digite o nome do usuario" required/>
+                placeholder="Digite seu nome " required/>
                 
             </div>
 
             <div class="form-content">
-                <label for="email">Email</label>
+                <label id="labelemail" for="email">Email:</label>
                 <input 
                 type="email"
                 id="email"
@@ -38,7 +36,7 @@
             </div>
 
             <div class="form-content">
-                <label for="password">Senha</label>
+                <label id="labelsenha" for="password">Senha:</label>
                 <input 
                 type="password"
                 id="passaword"
@@ -47,21 +45,30 @@
             </div>
 
             <div class="form-content">
-                <label for="passaword-confirmation">Confirmação de Senha</label>
+                <label id="labelconfirmar" for="passaword-confirmation">Confirmação de Senha:</label>
                 <input 
                 type="password"
-                id="passaword-confirmation"
+                id="passawordconfirmation"
                 placeholder="Digite a sua senha novamente" required/>
             </div>
 
             <div class="btn-cadastrar">
                 <button type="submit" onclick="cadastrar()">Cadastrar</button>
             </div>
+
+            <div id="linha">
+                <hr>
+            </div>
+
+            <p>
+                Já tem conta?
+                <a href="./login.html">Faça Login</a>
+            </p>
             
 
         </div>
     </div>
 
-    <script src="../js/cadastro2.js"></script>
+    <script src="../js/cadastro3.jss"></script>
 </body>
 </html>
