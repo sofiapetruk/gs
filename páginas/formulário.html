@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="../css/formulario.css">  
+    <script href="../js/formulário.js" defer></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <header class="top">
+            <nav>
+                <a class="nav-link" href="#">Sobre nós</a>
+                <a class="nav-link" href="#">Integrantes</a>
+                <a class="nav-link" href="#">Solução</a>
+                <a class="nav-link" href="#">Chatbot</a>
+                <a class="nav-link" href="#">Contato us</a>
+            </nav>
+        </header>
+        <hr>
+        
+        <div class="formulário">
+            <h1 id="título">Contact us</h1>
+
+            <form action="#" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea  id="mensagem" name="message" placeholder="Digite seu comentário"></textarea>
+
+                <button type="submit" onclick="Mandar()" >Mandar</button>
+            </form>
+        </div>	 
+        
+</body>
+</html>
