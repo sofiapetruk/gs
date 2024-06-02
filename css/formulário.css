@@ -1,21 +1,19 @@
-* {
+ * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+}  
 
-/* body {
-    background-image: url(https://i.imgur.com/8Z1ksPx.jpg);
+body {
+    background-image: url(https://i.imgur.com/MmvRuCg.jpg);
     background-repeat: no-repeat; /*coloca isso para o fundo não repetir */
-    /* background-size: cover; /*Para cobrir todo os espaço */
-    /* background-attachment: fixed;
-}  */
+    background-size: cover; /*Para cobrir todo os espaço */
+    background-attachment: fixed;
+}
 
 .container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    
 }
 
 .top {
@@ -47,39 +45,50 @@ hr {
     border: 1px solid black;
 }
 
-
-.membro {
-    margin: 20px;
-
-}
-.text {
-    font-size: 16px;
-    position: relative;
-    top: 5%;
-    text-align: justify; 
-}
-
-.social-media a  {
-    text-decoration: none;
-    margin: 10px;
-    
-    
-    
-}
-.social-media .ul{
-    list-style-type: none;
+.container {
     display: flex;
-    flex-wrap: wrap;
-    
-
+    justify-content: center;
+    align-content: center;
+    width: 100%; /*Ocupar 100% do espaço */
 }
 
-.imagem {
-    flex-direction: column;
-    width: 250px;
-    height: 200px;
-    margin: 10px;
+.formulário {
+    background-color: #ffffff90; /*deixa a imagem com o fundo do background */
+    padding: 30px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 1px 0px #00000070; /* mudar a sombra */
+    width: 400px;
+   
+    margin: 30px;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /*Serve para a margin de baixo do h1 */
+    /*Colocar a cor no h1 */
+}
+
+input, label, textarea, button {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+button {
+    /*colocar a cor */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    cursor: pointer
+}
+
 
 @media only screen  and (max-width: 655px) {
     .nav-link {

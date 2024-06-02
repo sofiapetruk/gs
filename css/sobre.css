@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-} */
+} 
 
 body {
     background-image: url(https://i.imgur.com/MmvRuCg.jpg);
@@ -12,8 +12,6 @@ body {
 }
 
 .container {
-    border-color: blue;
-    border-style: solid;
     display: flex;
     flex-wrap: wrap;
 }
@@ -56,33 +54,55 @@ p {
 
 h1 {
     font-size: 25px;
-    font-style: italic;
+    font-style: bold;
     background-color: white;
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 .problema{
-    border-color: blueviolet;
-    border-style: solid;
+    margin: 10px;
     width: 50%;
 
+}
+
+#problema {
+    background-color: #ffffff75;
 }
 
 .objetivo {
-    border-color: chartreuse;
-    border-style: solid;
+    margin: 10px;
     width: 50%;
 }
 
+#objetivo {
+    background-color: #ffffff75;
+}
+
 .imagemform {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    
 }
 
 .imagemform .imagens {
-    width: 100%;
     padding: 10px;
+}
+
+
+@media only screen  and (max-width: 750px) {
+    .imagemform {
+        width: 100%;
+    }
+    .problema {
+        width: 95%;
+    }
+    .objetivo {
+        width: 95%;
+    }
+
 }
 
 @media only screen  and (max-width: 655px) {
@@ -96,13 +116,7 @@ h1 {
     .nav-link {
         margin: 10px;
         font-size: 16px;
-    }
-    .problema {
-        width: 95%;
-    }
-    .objetivo {
-        width: 95%;
-    }
+    }  
 }
 
 @media only screen  and (max-width: 500px) {
@@ -110,12 +124,7 @@ h1 {
         margin: 5px;
         font-size: 13px;
     }
-    .problema {
-        width: 95%;
-    }
-    .objetivo {
-        width: 95%;
-    }
+    
 
 
 }
