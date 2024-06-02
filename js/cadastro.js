@@ -3,7 +3,7 @@ let fraseNome = document.querySelector('#fraseNome');
 let validNome = false
 
 let email = document.querySelector('#email');
-let frasEemail = document.querySelector('#frasEemail')
+let frasEemail = document.querySelector('#frasEemail');
 let validEmail = false
 
 let senha = document.querySelector('#senha');

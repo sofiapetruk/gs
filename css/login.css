@@ -78,3 +78,8 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
+
+#textForm {
+    color: red;
+    display: block;
+}

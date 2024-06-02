@@ -6,12 +6,11 @@
     <title>Página do login</title>
 
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../js/login.js" defer></script>
 
 </head>
 <body>
     <div class="container">  
-        <form action="./login.html" method="get" onsubmit="return validar(email, senha)">
+        <form>
             <div class="form-login">
                 <h1>Login</h1>
     
@@ -19,19 +18,20 @@
     
                 <div class="form-content">
                     <label for="email">Email:</label>
-                    <input type="email"id="email" placeholder="Digite o seu email" required/>
+                    <input type="email"id="email" placeholder="Digite o seu email"/>
                     <a id="frasEemail"></a>
                 </div>
     
                 <div class="form-content">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" placeholder="Digite a sua senha" required/>
+                    <input type="password" id="senha" placeholder="Digite a sua senha"/>
                     <a id="fraseSenha"></a>
                     <!-- <a>Aqui vai a mensagem de erro...</a> -->
                 </div>
     
                 <div class="btn-login">
-                    <button onclick="entrar()">Entrar</button>
+                    <button onclick='entrar()'>Entrar</button>
+                    <a id="textForm"></a>
                 </div>
     
                 <div id="linha">
@@ -47,6 +47,6 @@
     </div>
         
     
-    <script href="../js/login2.js"></script>
+    <script src="../js/login2.js"></script>
 </body>
 </html>
