@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -16,15 +17,15 @@ body {
     justify-content: center;
     align-content: center;
     width: 100%; /*Ocupar 100% do espaço */
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-.formcadastro{
+.form-login {
     background-color: #ffffff90; /*deixa a imagem com o fundo do background */
-    padding: 20px;
-    border-radius: 5%;
+    padding: 30px;
+    border-radius: 10%;
     box-shadow: 3px 3px 1px 0px #00000070; /* mudar a sombra */
-    width: 450px;
+    width: 400px;
 
 }
 
@@ -43,24 +44,22 @@ h1 {
 
 }
 
-    
-
 .form-content {
     position: relative;
-    margin-top: 8%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .form-content label{
     font-size: 18px;
+    margin-bottom: 5%;
 }
-
 
 button {
     /*colocar a cor */
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -71,23 +70,16 @@ hr {
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
 }
 
-#login {
-    display: inline;
+a {
     font-weight: bold;
     text-decoration: none;
-    color: blue;
 }
 
-a {
+#textForm {
     color: red;
     display: block;
 }
-
-/* .error {
-    color: red;
-    display: block;
-} */
