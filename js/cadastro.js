@@ -1,65 +1,86 @@
-let nome = document.getElementById("username");
-let email = document.getElementById("email");
-let senha = document.getElementById("senha");
-let confirmarSenha = document.getElementById("confirmarSenha");
-let form = document.querySelector("form");
-let textForm = document.getElementById("textForm");
-let frasEemail = document.getElementById("frasEemail");
-let fraseSenha = document.getElementById("fraseSenha");
-let fraseConfirmSenha = document.getElementById("fraseConfirmSenha");
+let nome = document.querySelector('#nome');
+let fraseNome = document.querySelector('#fraseNome');
+let validNome = false
 
-form.addEventListener('submit' , (e) => {
-    if(email.value == "" && senha.value == "" && confirmarSenha.value == "") {
-        textForm.textContent = "Você precisa preencher todos os campos!";
-    } else if( validatorEmail(email) === true && validatorSenha(senha) === true ) {
-        console.log(email.value);
-        console.log(senha.value);
-        console.log(confirmarSenha.value);
-        textForm.textContent = "";
-        frasEemail.textContent = "";
-        fraseSenha.textContent = "";
-        fraseConfirmSenha.textContent = "";
+let email = document.querySelector('#email');
+let frasEemail = document.querySelector('#frasEemail')
+let validEmail = false
 
-    }else {
-        console.log("Requisitos não está de acordo com que é necessário.");
-    }
+let senha = document.querySelector('#senha');
+let fraseSenha = document.querySelector('#fraseSenha');
+let validSenha = false
 
+let confirmarSenha = document.querySelector('#confirmarSenha');
+let fraseConfirmSenha = document.querySelector('#fraseConfirmSenha')
+let validConfirmarSenha = false
 
-    e.preventDefault();
-});
-
-
-email.addEventListener("keyup", () => {
-    if( validatorEmail(email) !== true) {
-        frasEemail.textContent = "O formato do email está incorreto, tente novamente.";
+nome.addEventListener('keyup', ()=> {
+    if(nome.value.length <= 2) {
+        fraseNome.textContent = 'Insira no minimo 3 caracteres'
+        validNome = false
     } else {
-        frasEemail.textContent = "";
+        fraseNome.textContent = ''
+        validNome = true
+
     }
+})
 
-});
-
-senha.addEventListener("keyup", () => {
-    if(validatorSenha(senha) !== true) {
-        fraseSenha.textContent = "O formato da senha está incorreto e tem que ter no min 6 caracteres, ter números e um caracter especial .";
+email.addEventListener('keyup', ()=> {
+    if(email.value.length <= 4) {
+        frasEemail.textContent = 'O email não está de acordo com a norma'
+        validEmail = false
     } else {
-        fraseSenha.textContent = "";
+        frasEemail.textContent = ''
+        validEmail = true
     }
-});
+})
 
-confirmarSenha.addEventListener("keyup", () => {
-    if(confirmarSenha !== senha) {
-        fraseConfirmSenha.textContent = "As senhas não são a mesmas.";
+senha.addEventListener('keyup', ()=> {
+    if(senha.value.length <= 7) {
+        fraseSenha.textContent = 'Insira no minimo 8 caracteres'
+        validSenha = false
+
     } else {
-        fraseConfirmSenha.textContent = "";
+        fraseSenha.textContent = ''
+        validSenha = true
+
     }
-});
+})
 
-function validatorEmail(email) {
-    let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-    return emailPattern.test(email);
-}
+confirmarSenha.addEventListener('keyup', ()=> {
+    if(senha.value != confirmarSenha.value) {
+        fraseConfirmSenha.textContent = 'As senhas não são as mesmas'
+        validConfirmarSenha = false
+    } else {
+        fraseConfirmSenha.textContent = ''
+        validConfirmarSenha = true
 
-function validatorSenha(senha) {
-    let passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-    return passwordPattern.test(senha);
+    }
+})
+
+
+function cadastrar() {
+    if (validNome && validEmail && validSenha && validConfirmarSenha ) {
+        let usuarioLista = JSON.parse(localStorage.getItem('usuarioLista') || '[]')
+
+        usuarioLista.push(
+            {
+                nomeCadastro: nome.value,
+                emailCadastro: email.value,
+                senhaCadastro: senha.value,
+                confirmSenhaCadastro: confirmarSenha.value
+            }
+        )
+        localStorage.setItem('usuarioLista', JSON.stringify(usuarioLista))
+        setTimeout(()=> {
+            window.location.href = '../páginas/login.html';
+        }, 3000)
+
+
+        
+
+    } else {
+        alert('Preencha todas as colunas')
+    }
+
 }

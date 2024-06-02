@@ -17,7 +17,7 @@
             <form>
                 <div class="form-content">
                     <label for="username">Nome do usuário:</label>
-                    <input type="text" id="username" placeholder="Digite seu nome "/>
+                    <input type="text" id="nome" placeholder="Digite seu nome "/>
                     <a id="fraseNome"></a>
                     <!-- <a class="error" id="nome-required-error">É obrigatório colocar o seu nome</a> -->
                 </div>
@@ -39,14 +39,14 @@
     
                 <div class="form-content">
                     <label for="passaword-confirmation">Confirmação de Senha:</label>
-                    <input type="password" id="confirmarSenha" placeholder="Digite a sua senha novamente"/>
-                    <a id="fraseConfirmSenha"></a>
+                    <input type="password" id="confirmarSenha" placeholder="Digite a sua senha novamente" />
+                    <a id="fraseConfirmSenha"></a> 
                     <!-- <a class="error" id="senhaConfirm-required-error">É obrigatório colocar o sua senha</a>
                     <a class="error" id="senhaConfirm-invalid-error">Não são as mesmas senha</a> -->
 
                 </div>
                 <div class="btn-cadastrar">
-                    <button type="submit" id="btnSubmit">Cadastrar</button>
+                    <button id="btnSubmit" onclick="cadastrar()">Cadastrar</button>
                     <a id="textForm"></a>
                 </div>
 
@@ -71,6 +71,3 @@
     <script src="../js/cadastro.js"></script>
 </body>
 </html>
-<!-- onchange="valideEmail()"
-onchange="validSenha()"
-onchange="validConfirmSenha()" -->
