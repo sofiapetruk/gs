@@ -1,96 +1,65 @@
+let nome = document.getElementById("username");
+let email = document.getElementById("email");
+let senha = document.getElementById("senha");
+let confirmarSenha = document.getElementById("confirmarSenha");
+let form = document.querySelector("form");
+let textForm = document.getElementById("textForm");
+let frasEemail = document.getElementById("frasEemail");
+let fraseSenha = document.getElementById("fraseSenha");
+let fraseConfirmSenha = document.getElementById("fraseConfirmSenha");
 
-const form = document.getElementById("form");
-const username = document.getElementById("username");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const passwordConfirmation = document.getElementById("passwordConfirmation");
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    checkForm();
-})
-
-function checkInputUsername(){
-    const usernameValue = username.value;
-    console.log(usernameValue);
-
-    if(usernameValue === ""){
-        errorInput(username, "Preencha o nome")
-    
-    }else{
-        const formItem = username.parentElement;
-        formItem.className = "form-content"
-    }
-}
-
-function checkInputEmail() {
-    const emailValue = email.value;
-
-    if (emailValue === "") {
-        errorInput(email, "O email é obrigatório")
+form.addEventListener('submit' , (e) => {
+    if(email.value == "" && senha.value == "" && confirmarSenha.value == "") {
+        textForm.textContent = "Você precisa preencher todos os campos!";
+    } else if( validatorEmail(email) === true && validatorSenha(senha) === true ) {
+        console.log(email.value);
+        console.log(senha.value);
+        console.log(confirmarSenha.value);
+        textForm.textContent = "";
+        frasEemail.textContent = "";
+        fraseSenha.textContent = "";
+        fraseConfirmSenha.textContent = "";
 
     }else {
-        const formItem = email.parentElement;
-        formItem.className = "form-content"
-    }
-}
-
-function checkInputPassword() {
-    const passawordValue = password.value;
-    if(passawordValue === ""){
-        errorInput(password, "A senha é obrigatória")
-
-    }else if(passawordValue.length < 8) {
-        errorInput(password, "A senha precisa ter no mínimo 8 caracteres")
-    } else{
-        const formItem = password.parentElement;
-        formItem.className = "form-content"
-    }
-}
-
-function checkInputPasswordConfirmation() {
-    const passawordValue = password.value;
-    const confirmationPasswordValue = passwordConfirmation.value;
-
-    if(confirmationPasswordValue === ""){
-        errorInput(passwordConfirmation, "A senha é obrigatória")
-
-    }else if(confirmationPasswordValue !== passawordValue) {
-        errorInput(password, "As senhas não são iguais")
-    } else{
-        const formItem = password.parentElement;
-        formItem.className = "form-content"
+        console.log("Requisitos não está de acordo com que é necessário.");
     }
 
-}
 
-function checkForm(){
-    checkInputUsername();
-    checkInputEmail();
-    checkInputPassword();
-    checkInputPasswordConfirmation();
+    e.preventDefault();
+});
 
-    const formItems = form.querySelectorAll(".form-content")
 
-    const isValid = [...formItems].every( (item) =>{
-        return item.className === "form-content"
-    });
-
-    if(isValid){
-        alert("Cadastrado com sucesso")
-    }else{
-        alert("Preencha todos os campos corretamente.")
+email.addEventListener("keyup", () => {
+    if( validatorEmail(email) !== true) {
+        frasEemail.textContent = "O formato do email está incorreto, tente novamente.";
+    } else {
+        frasEemail.textContent = "";
     }
+
+});
+
+senha.addEventListener("keyup", () => {
+    if(validatorSenha(senha) !== true) {
+        fraseSenha.textContent = "O formato da senha está incorreto e tem que ter no min 6 caracteres, ter números e um caracter especial .";
+    } else {
+        fraseSenha.textContent = "";
+    }
+});
+
+confirmarSenha.addEventListener("keyup", () => {
+    if(confirmarSenha !== senha) {
+        fraseConfirmSenha.textContent = "As senhas não são a mesmas.";
+    } else {
+        fraseConfirmSenha.textContent = "";
+    }
+});
+
+function validatorEmail(email) {
+    let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    return emailPattern.test(email);
 }
 
-
-
-function errorInput(input, message) {
-    const formItem = input.parentElement;
-    const textMessage = formItem.querySelector("a")
-
-    textMessage.innerText = message;
-
-    formItem.className = "form-content error"
+function validatorSenha(senha) {
+    let passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return passwordPattern.test(senha);
 }
