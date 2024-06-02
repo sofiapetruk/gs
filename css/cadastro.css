@@ -87,7 +87,27 @@ a {
     display: block;
 }
 
-/* .error {
-    color: red;
-    display: block;
-} */
+@media only screen  and (max-width: 730px) {
+    .container {
+        margin-top: 40px;
+    }
+}
+
+
+@media only screen  and (max-width: 655px) {
+    .formcadastro {
+        width: 425px;
+    } 
+}
+
+@media only screen  and (max-width: 575px) {
+    .formcadastro {
+        width: 400px;
+    }
+}
+
+@media only screen  and (max-width: 500px) {
+    .formcadastro {
+        width: 365px;
+    }
+}
