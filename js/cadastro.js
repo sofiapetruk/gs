@@ -26,7 +26,7 @@ nome.addEventListener('keyup', ()=> {
         validNome = true
 
     }
-})
+});
 
 email.addEventListener('keyup', ()=> {
     if(email.value.length <= 4) {
@@ -36,7 +36,7 @@ email.addEventListener('keyup', ()=> {
         frasEemail.textContent = ''
         validEmail = true
     }
-})
+});
 
 senha.addEventListener('keyup', ()=> {
     if(senha.value.length <= 7) {
@@ -48,7 +48,7 @@ senha.addEventListener('keyup', ()=> {
         validSenha = true
 
     }
-})
+});
 
 confirmarSenha.addEventListener('keyup', ()=> {
     if(senha.value != confirmarSenha.value) {
@@ -59,33 +59,32 @@ confirmarSenha.addEventListener('keyup', ()=> {
         validConfirmarSenha = true
 
     }
-})
+});
 
+
+btnSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    cadastrar();
+});
 
 function cadastrar() {
-    if (validNome && validEmail && validSenha && validConfirmarSenha ) {
-        let usuarioLista = JSON.parse(localStorage.getItem('usuarioLista') || '[]')
+    if (validNome && validEmail && validSenha && validConfirmarSenha) {
+        let usuarioLista = JSON.parse(localStorage.getItem('usuarioLista') || '[]');
 
-        usuarioLista.push(
-            {
-                nomeCadastro: nome.value,
-                emailCadastro: email.value,
-                senhaCadastro: senha.value,
-                confirmSenhaCadastro: confirmarSenha.value
-            }
-        )
-        localStorage.setItem('usuarioLista', JSON.stringify(usuarioLista))
+        usuarioLista.push({
+            nomeCadastro: nome.value,
+            emailCadastro: email.value,
+            senhaCadastro: senha.value,
+        });
+
+        localStorage.setItem('usuarioLista', JSON.stringify(usuarioLista));
         setTimeout(function() {
             window.location.href = "../páginas/login.html";
-        }, 3000);   
-        return false; } 
-    else {
-        alert('Preencha todas as colunas')
-    }
-        
-    
+        }, 0.0005);
 
-    
+    } else {
+        alert('Preencha todas as colunas');
+    }
 }
 
 

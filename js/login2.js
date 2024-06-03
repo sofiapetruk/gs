@@ -38,6 +38,6 @@ function entrar() {
     if(kisjfsd) {
 
     } else {
-         alert('Preencha todas as colunas')
+        alert('Preencha todas as colunas')
     } 
 }
