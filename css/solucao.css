@@ -46,8 +46,14 @@ hr{
     border: 1px solid black;
 }
 
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
 h1 {
-    font-size: 25px;
+    font-size: 28px;
     font-style: bold;
     background-color: white;
     margin-bottom: 15px;
@@ -55,7 +61,7 @@ h1 {
 }
 .funcionas {
     margin: 10px;
-    width: 60%;
+    width: 65%;
 }
 
 #funciona {
@@ -64,7 +70,7 @@ h1 {
 
 .livros {
     margin: 10px;
-    width: 60%;
+    width: 65%;
 }
 
 #livro {
@@ -73,12 +79,21 @@ h1 {
 
 .filmes {
     margin: 10px;
-    width: 60%;
+    width: 65%;
 }
 
 #filme {
     background-color: #ffffff75;
 }
+
+.filme-form h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: rgb(46, 9, 81);
+    margin-left: 10px;
+    font-size: 25px;
+}
+
 
 #jogo {
     background-color: #ffffff75;
@@ -86,9 +101,15 @@ h1 {
 
 .jogos {
     margin: 10px;
-    width: 50%;
+    width: 65%;
 }
 
+.jogo-form #alink {
+    color: rgb(46, 9, 81);
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
 
 .navlink {
     display: flex;
@@ -102,8 +123,24 @@ h1 {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     
+    
 }
 
+@media only screen  and (max-width: 730px) {
+    .funcionas {
+        width: 95%;
+    }
+    .livros {
+        width: 95%;
+    }
+    .filmes {
+        width: 95%;
+    }
+    .jogos {
+        width: 95%;
+    }
+
+}
 
 @media only screen  and (max-width: 655px) {
     .nav-link {
