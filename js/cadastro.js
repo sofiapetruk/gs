@@ -72,7 +72,6 @@ function cadastrar() {
         let usuarioLista = JSON.parse(localStorage.getItem('usuarioLista') || '[]');
 
         usuarioLista.push({
-            nomeCadastro: nome.value,
             emailCadastro: email.value,
             senhaCadastro: senha.value,
         });
