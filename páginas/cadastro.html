@@ -14,46 +14,38 @@
             <h1>Nova Conta</h1>
 
     
-            <form>
+            <form method="post" onsubmit="return cadastrar(usuarioLista)">
                 <div class="form-content">
-                    <label for="username">Nome do usuário:</label>
+                    <label for="nome">Nome do usuário:</label>
                     <input type="text" id="nome" placeholder="Digite seu nome "/>
                     <a id="fraseNome"></a>
-                    <!-- <a class="error" id="nome-required-error">É obrigatório colocar o seu nome</a> -->
                 </div>
     
                 <div class="form-content">
                     <label for="email">Email:</label>
-                    <input type="email"id="email" placeholder="Digite o seu email" />
+                    <input type="email" id="email" placeholder="Digite o seu email" required/>
                     <a id="frasEemail"></a>
-                    <!-- <a class="error" id="email-required-error">É obrigatório colocar o seu email</a>
-                    <a class="error" id="email-invalid-error">Email inválido</a> -->
                 </div>
     
                 <div class="form-content">
-                    <label  for="password">Senha:</label>
+                    <label  for="senha">Senha:</label>
                     <input type="password" id="senha" placeholder="Digite a sua senha" />
                     <a id="fraseSenha"></a>
-                    <!-- <a class="error" id="senha-required-error">É obrigatório colocar o sua senha</a> -->
                 </div>
     
                 <div class="form-content">
-                    <label for="passaword-confirmation">Confirmação de Senha:</label>
+                    <label for="confirmarSenha">Confirmação de Senha:</label>
                     <input type="password" id="confirmarSenha" placeholder="Digite a sua senha novamente" />
                     <a id="fraseConfirmSenha"></a> 
-                    <!-- <a class="error" id="senhaConfirm-required-error">É obrigatório colocar o sua senha</a>
-                    <a class="error" id="senhaConfirm-invalid-error">Não são as mesmas senha</a> -->
+                    
 
                 </div>
                 <div class="btn-cadastrar">
-                    <button id="btnSubmit" onclick="cadastrar()">Cadastrar</button>
+                    <button type="submit" id="btnSubmit" onclick="cadastrar()">Cadastrar</button>
                     <a id="textForm"></a>
                 </div>
-
+                
             </form>
-
-
-            
 
             <div id="linha">
                 <hr>

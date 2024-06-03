@@ -14,6 +14,9 @@ let confirmarSenha = document.querySelector('#confirmarSenha');
 let fraseConfirmSenha = document.querySelector('#fraseConfirmSenha')
 let validConfirmarSenha = false
 
+
+const btnSubmit = document.querySelector('#btnSubmit');
+
 nome.addEventListener('keyup', ()=> {
     if(nome.value.length <= 2) {
         fraseNome.textContent = 'Insira no minimo 3 caracteres'
@@ -72,15 +75,17 @@ function cadastrar() {
             }
         )
         localStorage.setItem('usuarioLista', JSON.stringify(usuarioLista))
-        setTimeout(()=> {
-            window.location.href = '../páginas/login.html';
-        }, 3000)
-
-
-        
-
-    } else {
+        setTimeout(function() {
+            window.location.href = "../páginas/login.html";
+        }, 3000);   
+        return false; } 
+    else {
         alert('Preencha todas as colunas')
     }
+        
+    
 
+    
 }
+
+

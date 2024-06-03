@@ -13,8 +13,6 @@ body {
 }
 
 .container {
-    border-color: blue;
-    border: solid 2px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
