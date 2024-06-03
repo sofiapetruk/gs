@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-image: url(https://i.imgur.com/8Z1ksPx.jpg);
+body {
+    background-image: url(https://i.imgur.com/MmvRuCg.jpg);
     background-repeat: no-repeat; /*coloca isso para o fundo não repetir */
-    /* background-size: cover; /*Para cobrir todo os espaço */
-    /* background-attachment: fixed;
-}  */
+    background-size: cover; /*Para cobrir todo os espaço */
+    background-attachment: fixed;
+} 
 
 .container {
     display: flex;
