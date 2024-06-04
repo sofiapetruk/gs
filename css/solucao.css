@@ -127,6 +127,15 @@ h1 {
     
 }
 
+
+
+@media only screen  and (max-width: 780px) {
+    .nav-link {
+        margin: 12px;
+        font-size: 18px;
+    }
+}
+
 @media only screen  and (max-width: 730px) {
     .funcionas {
         width: 95%;
@@ -143,26 +152,30 @@ h1 {
 
 }
 
-@media only screen  and (max-width: 655px) {
+@media only screen  and (max-width: 670px) {
     .nav-link {
-        margin: 12px;
-        font-size: 18px;
+        margin: 11px;
+        font-size: 17px;
     }
 }
 
-@media only screen  and (max-width: 575px) {
+@media only screen  and (max-width: 590px) {
     .nav-link {
         margin: 10px;
         font-size: 16px;
-    }  
+    }
 }
 
 @media only screen  and (max-width: 500px) {
     .nav-link {
         margin: 5px;
-        font-size: 13px;
+        font-size: 12px;
     }
-    
+}
 
-
+@media only screen  and (max-width: 400px) {
+    .nav-link {
+        margin: 3px;
+        font-size: 12px;
+    }
 }

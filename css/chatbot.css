@@ -95,18 +95,23 @@ input {
     padding: 5px 5px;
     font-size: 14px;
     border-radius: 8px;
+
 }
-@media only screen  and (max-width: 730px) {
+
+@media only screen  and (max-width: 780px) {
+    .nav-link {
+        margin: 12px;
+        font-size: 18px;
+    }
     #top {
         font-size: 28px;
     }
 }
 
-
-@media only screen  and (max-width: 655px) {
+@media only screen  and (max-width: 670px) {
     .nav-link {
-        margin: 12px;
-        font-size: 18px;
+        margin: 11px;
+        font-size: 17px;
     }
     #top{
         font-size: 23px;
@@ -123,10 +128,10 @@ input {
     }
 }
 
-@media only screen  and (max-width: 575px) {
+@media only screen  and (max-width: 590px) {
     .nav-link {
         margin: 10px;
-        font-size: 15px;
+        font-size: 16px;
     }  
     #top{
         font-size: 20px;
@@ -144,7 +149,7 @@ input {
 @media only screen  and (max-width: 500px) {
     .nav-link {
         margin: 5px;
-        font-size: 10px;
+        font-size: 12px;
     }
     #top{
         font-size: 18px;
@@ -156,5 +161,12 @@ input {
     }
     h2 {
         font-size: 21px;
+    }
+}
+
+@media only screen  and (max-width: 400px) {
+    .nav-link {
+        margin: 3px;
+        font-size: 12px;
     }
 }
