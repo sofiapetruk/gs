@@ -18,14 +18,16 @@ function entrar() {
                 email: item.emailCadastro,
                 senha: item.senhaCadastro
             };
+        } else {
+            textForm.textContent = 'Senha ou email incorretos, tente novamente';
         }
     });
 
     if (email.value === usuarioValid.email && senha.value === usuarioValid.senha) {
         window.location.href = '../páginas/sobre-nós.html';
-    } else {
-        textForm.textContent = 'Senha ou email incorretos, tente novamente';
-    }
+    } 
+        
+    
 }
 const btnLogin = document.querySelector('#btnLogin'); 
 
