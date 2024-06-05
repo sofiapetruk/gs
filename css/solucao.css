@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -30,12 +31,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-link {
     margin: 20px;
-    margin-top: 10px;
     text-align: center;
     color: rgb(3, 3, 3);
     text-decoration: none;
@@ -71,6 +72,9 @@ h1 {
 .funcionas {
     margin: 10px;
     width: 65%;
+    margin-right: 35%;
+    padding: 10px;
+
 }
 
 #funciona {
@@ -81,6 +85,8 @@ h1 {
 .livros {
     margin: 10px;
     width: 65%;
+    margin-right: 35%;
+    padding: 10px;
     
 }
 
@@ -107,6 +113,8 @@ h1 {
 .filmes {
     margin: 10px;
     width: 65%;
+    margin-right: 35%;
+    padding: 10px;
 }
 
 #filme {
@@ -129,6 +137,8 @@ h1 {
 .jogos {
     margin: 10px;
     width: 65%;
+    margin-right: 35%;
+    padding: 10px;
 }
 
 .jogo-form #alink {
@@ -168,15 +178,19 @@ h1 {
     }
     .funcionas {
         width: 95%;
+        margin-right: 0%;
     }
     .livros {
         width: 95%;
+        margin-right: 0%;
     }
     .filmes {
         width: 95%;
+        margin-right: 0%;
     }
     .jogos {
         width: 95%;
+        margin-right: 0%;
     }
 
 }

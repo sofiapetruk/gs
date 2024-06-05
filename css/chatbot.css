@@ -42,8 +42,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.3s ease;
 }
-.nav-link:houver{
-    background-color: rgb(143, 143, 143);
+
+.nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.718);
 
 }
 
