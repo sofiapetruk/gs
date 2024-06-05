@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Geneva, sans-serif;
 } 
 
 body {
@@ -33,7 +34,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Geneva, sans-serif;
     transition: background-color 0.3s ease;
 }
 .nav-link:houver{
@@ -48,7 +49,7 @@ hr{
 
 p {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Geneva, sans-serif;
     text-align: justify;
 }
 
@@ -65,6 +66,9 @@ h1 {
 .problema{
     margin: 10px;
     width: 50%;
+    margin-right: 45%;
+    position: relative;
+    top: 10%;
 
 }
 
@@ -82,20 +86,28 @@ h1 {
 }
 
 .imagemform {
-    width: 55%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+    position: relative;
+    margin-left: 50%;
+    margin-top: -800px;
+    padding: 100px;
+   
 }
 
 .imagemform .img {
     padding: 10px;
+    border-radius: 10%;
 }
 
-#imagemicon{
-    width: 130px;
-    height: 100px;
+.imagemicon img{
+    width: 50px;
+    height: 50px;
     margin: 15px;
+    position: relative;
+    bottom: 80%;
 }
 
 
