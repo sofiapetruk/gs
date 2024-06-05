@@ -39,7 +39,7 @@ body {
     font-family: Geneva, sans-serif;
     transition: background-color 0.3s ease;
 }
-.nav-link:houver{
+.nav-link:hover{
     background-color: rgb(143, 143, 143);
 
 }
@@ -74,12 +74,13 @@ hr {
     
 
 }
-.imagemicon img{
+
+#logo{
     width: 50px;
     height: 50px;
     margin: 20px;
     position: relative;
-    top: 60%;
+    bottom: 75px;
 }
 .imagem {
     flex-direction: column;
