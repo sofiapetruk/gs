@@ -56,9 +56,11 @@ p {
 h1 {
     font-size: 25px;
     font-style: bold;
-    background-color: white;
+    background-color: #4a92a8;
     margin-bottom: 15px;
     margin-left: 1px;
+    padding: 6px;
+    color: aliceblue;
 }
 
 
