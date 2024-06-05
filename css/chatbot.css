@@ -17,9 +17,19 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 95vh;
+    height: 89vh;
+    justify-content: center;
+    align-items: center;
 } 
 
+.quadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 700px;
+    background-color: #4a92a8;
+}
 
 
 .top1 {
@@ -30,22 +40,21 @@ body {
     align-items: center;
     width: 100%;
     height: 50px;
+    margin-top: 1%;
 }
 
 .nav-link {
     margin: 20px;
     text-align: center;
-    color: rgb(245, 235, 235);
-   
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     font-family:Geneva, sans-serif;
     transition: background-color 0.3s ease;
 }
 .nav-link:hover{
     background-color: rgb(143, 143, 143);
-
 }
 
 
@@ -54,8 +63,10 @@ body {
 }
 
 #logo {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0%;
 }
 
 #top {
@@ -68,24 +79,18 @@ body {
 }
 
 hr {
+    margin-top: -0.2%;
     border: 1px solid black;
 }
 
 
 h2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     font-size: 28px;
     color: aliceblue;
     padding: 20px;
-    background-color: #4a92a8;
     margin-bottom: 15px;
     margin-left: 1px;
-    width: 700px;
-    
 }
-
 
 .mensagem {
     margin-top: 45vh;
@@ -103,7 +108,6 @@ input {
     padding: 5px 5px;
     font-size: 14px;
     border-radius: 8px;
-
 }
 
 @media only screen  and (max-width: 780px) {

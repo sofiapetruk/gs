@@ -37,7 +37,7 @@ body {
     font-family: Geneva, sans-serif;
     transition: background-color 0.3s ease;
 }
-.nav-link:houver{
+.nav-link:hover{
     background-color: rgb(143, 143, 143);
 
 }
@@ -71,6 +71,7 @@ h1 {
     margin-right: 45%;
     position: relative;
     top: 10%;
+    padding: 30px;
 
 }
 
@@ -81,6 +82,7 @@ h1 {
 .objetivo {
     margin: 10px;
     width: 50%;
+    padding: 30px;
 }
 
 #objetivo {
