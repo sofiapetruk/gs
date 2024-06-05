@@ -66,6 +66,7 @@ h1 {
 .funcionas {
     margin: 10px;
     width: 65%;
+    margin-left: -180px;
 }
 
 #funciona {
@@ -140,12 +141,31 @@ h1 {
     padding-top: 10px;
     width: 70%;
 }
-.solucao img{
+#capa{
     width: 100px;
     height: 150px;
 }
+#capa:hover{
+    cursor: pointer;
+    width: 150px;
+    height: 200px;
+    transition: height 1s;
+}
 
 
+.imagemicon img{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    position: relative;
+    bottom: 55%;
+    
+}
+#nome{
+    width: 110px;
+    height: 50px;
+    margin-left: -20px;
+}
 
 
 @media only screen  and (max-width: 780px) {
