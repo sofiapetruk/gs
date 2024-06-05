@@ -1,10 +1,8 @@
 * {
-    padding: 0;
-    box-sizing: border-box;
     margin: 0px;
-    font-family:Geneva, sans-serif;
-    
-}
+    padding: 0px;
+    box-sizing: border-box;
+}  
 
 body {
     background-image: url(https://i.imgur.com/MmvRuCg.jpg);
@@ -12,77 +10,57 @@ body {
     background-size: cover; /*Para cobrir todo os espaço */
     background-attachment: fixed;
 }
-
+#logo{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 89vh;
     justify-content: center;
     align-items: center;
-} 
-
-.quadrado{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    width: 700px;
-    background-color: #4a92a8;
 }
 
-
-.top1 {
+.top {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    margin-top: 1%;
 }
 
 .nav-link {
     margin: 20px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(3, 3, 3);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    font-family:Geneva, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.3s ease;
 }
-.nav-link:hover{
+.nav-link:houver{
     background-color: rgb(143, 143, 143);
+
 }
 
-
-.logo-tipo {
-    margin: 15px;
-}
-
-#logo {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 0%;
-}
-
-#top {
-    display: inline;
-    position: absolute;
-    top: 135px;
-    left: 175px;
-    font-family:Geneva, sans-serif;
-    font-size: 32px;
-}
-
-hr {
-    margin-top: -0.2%;
+hr{
+    width: 100%;
     border: 1px solid black;
 }
 
+
+.quadrado{
+    margin: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: #4a92a8;
+}
 
 h2 {
     font-size: 28px;
@@ -92,93 +70,60 @@ h2 {
     margin-left: 1px;
 }
 
-.mensagem {
-    margin-top: 45vh;
-}
-
-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-input {
-    width: 80%;
-    padding: 5px 5px;
-    font-size: 14px;
-    border-radius: 8px;
-}
 
 @media only screen  and (max-width: 780px) {
     .nav-link {
         margin: 12px;
         font-size: 18px;
     }
-    #top {
-        font-size: 28px;
+    h2 {
+        font-size: 25px;
     }
+
 }
 
 @media only screen  and (max-width: 670px) {
     .nav-link {
-        margin: 11px;
-        font-size: 17px;
-    }
-    #top{
-        font-size: 23px;
-        top: 120px;
-        left: 150px;
-    }
-    #logo {
-        width: 125px;
-        height: 75px;
-        left: 150px;
+        margin: 10px;
+        font-size: 16px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 23px;
     }
 }
 
 @media only screen  and (max-width: 590px) {
     .nav-link {
-        margin: 10px;
-        font-size: 16px;
-    }  
-    #top{
-        font-size: 20px;
+        margin: 7px;
+        font-size: 14px;
     }
     #logo {
-        width: 125px;
-        height: 75px;
-        left: 150px;
-    }
-    h2 {
-        font-size: 23px;
-    }
-}
-
-@media only screen  and (max-width: 500px) {
-    .nav-link {
-        margin: 5px;
-        font-size: 12px;
-    }
-    #top{
-        font-size: 18px;
-    }
-    #logo {
-        width: 125px;
-        height: 75px;
-        left: 150px;
+        width: 30px;
+        height: 30px;
     }
     h2 {
         font-size: 21px;
     }
 }
 
+@media only screen  and (max-width: 500px) {
+    .nav-link {
+        margin: 6px;
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
 @media only screen  and (max-width: 400px) {
     .nav-link {
         margin: 3px;
-        font-size: 12px;
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 19px;
     }
 }
+
+
