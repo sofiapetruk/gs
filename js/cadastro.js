@@ -28,9 +28,14 @@ nome.addEventListener('keyup', ()=> {
     }
 });
 
+function validateEmail(email) {
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailValid.test(email);
+}
+
 email.addEventListener('keyup', ()=> {
-    if(email.value.length <= 4) {
-        frasEemail.textContent = 'O email não está de acordo com a norma'
+    if(!validateEmail(email.value)) {
+        frasEemail.textContent = 'O email não está de acordo com a norma. A exemplo da validação: se@email.com'
         validEmail = false
     } else {
         frasEemail.textContent = ''
