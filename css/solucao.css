@@ -104,11 +104,53 @@ h1 {
     width: 100px;
     transition: width 2s;
 }
+
+#capa1 {
+    width: 100px;
+    transition: width 2s;
+
+}
+
+#capa2 {
+    width: 100px;
+    transition: width 2s;
+
+}
+
+#capa3 {
+    width: 100px;
+    transition: width 2s;
+}
+
+#capa4 {
+    width: 100px;
+    transition: width 2s;
+}
+
 #capa:hover{
     cursor: pointer;
     width: 150px;   
 }
 
+#capa1:hover{
+    cursor: pointer;
+    width: 150px;   
+}
+
+#capa2:hover{
+    cursor: pointer;
+    width: 150px;   
+}
+
+#capa3:hover{
+    cursor: pointer;
+    width: 150px;   
+}
+
+#capa4:hover{
+    cursor: pointer;
+    width: 150px;   
+}
 
 .filmes {
     margin: 10px;
@@ -142,6 +184,36 @@ h1 {
 }
 
 .jogo-form #alink {
+    color: rgb(34, 54, 146);
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.jogo-form #alink1 {
+    color: rgb(34, 54, 146);
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.jogo-form #alink2 {
+    color: rgb(34, 54, 146);
+    margin-left: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.jogo-form #alink3 {
     color: rgb(34, 54, 146);
     margin-left: 10px;
     font-size: 25px;
