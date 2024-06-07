@@ -1,7 +1,7 @@
 # GS - Front-End
 
 # linguagem utilizada
-- HTML, CSS. JS
+- HTML, CSS, JS
 
 # Equipe
 - Julia Monteiro| 557023

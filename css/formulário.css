@@ -131,7 +131,7 @@ button {
     }
 }
 
-@media only screen  and (max-width: 400px) {
+@media only screen  and (max-width: 414px) {
     .nav-link {
         margin: 3px;
         font-size: 11px;
